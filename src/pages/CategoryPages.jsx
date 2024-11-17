@@ -9,7 +9,7 @@ const CategoryPages = () => {
       <h2 className="text-xl font-semibold mb-4">Dragon News Home</h2>
       <div className="space-y-5">
         {
-            news.map(singleNews => <NewsCard key={singleNews.id} news={singleNews}></NewsCard>)
+            news.map((singleNews,index) => <NewsCard key={index} news={singleNews}></NewsCard>)
         }
       </div>
     </div>
